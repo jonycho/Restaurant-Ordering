@@ -1,0 +1,52 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- CSS -->
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Jonathan’s Diner</h1>
+                <h2>The best burgers and pizzas in town.</h2>
+            </header>
+            <main>
+                
+                <h2 class="title-discount">Big Discount!!</h2>
+                <p class="p-discount">10% discount on your order if you combine a drink with any food item!</p>
+                
+                <div id="menu-list"></div>
+                <div id="order-list"></div>
+            </main>
+            <div id="background-modal" class="fondo">
+                <div class="modal" id="modal">
+                        <div class="close-modal-btn-container">
+                            <button class="modal-close-btn" id="modal-close-btn">X</button>
+                        </div>
+                        <div class="modal-inner" id="modal-inner">
+                            <h2>Enter card details</h2>
+                            
+                            <form id="card-form">
+
+                                <input type="text" name="name" placeholder="Enter your name" required/>
+                                <input type="number" name="cardnumber" placeholder="Enter card number" required/>
+                                <input type="number" name="ccv" placeholder="Enter CVV" required/>
+                                
+                                <button type="submit" class="modal-btn">Pay</button>
+
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>        
+        
+        </div>    
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
